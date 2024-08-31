@@ -1,0 +1,799 @@
+body {
+    background-color:rgb(223, 222, 217);
+}
+
+@font-face {
+  font-family:font1;
+  src: url(OverpassBold-B3Xn.ttf);
+}
+
+
+a:link {
+    color: rgb(45,104,71);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(67, 57, 89);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(167, 140, 3);
+    transition: 0.75s;
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(65, 65, 182);
+  }
+
+
+
+
+/* tutorial on how to add times splash screen - https://youtu.be/MOlaldp1Fv4  */
+.splash {
+    position: relative;
+    background-color: rgb(223, 222, 217);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+}
+/* .splash.display-none {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
+    transition: all 1.0s;
+} */
+.flora-title {
+  position: relative;
+  bottom: -30pt;
+  left: 77pt;
+  width: 55%;
+}
+
+
+.click-continue {
+  position:fixed;
+  width:100%;
+  height:100%;
+  /* background-color: brown; */
+  z-index: 6;
+}
+
+
+.iconstitle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  transition: all 1.0s;
+}
+.iconstitle.display {
+  position: fixed;
+  background-color: rgb(223, 222, 217);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: 5;
+}
+
+
+
+
+.container {
+  height: 550pt;
+  width: 67%;
+  margin-top: -65pt;
+  margin-left: auto;
+  margin-right:40pt;
+  display:block;
+}
+
+.floratitle-1 {
+    font-size: 85pt;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 270pt;
+    left: 120pt;
+    /* z-index: 20; */
+    color: rgb(45,104,71);
+  }
+  .map {
+    position:absolute;
+    top: 15pt;
+    left: 370pt;
+    z-index: -1;
+    width: 700pt;
+  }
+  .map-about {
+    position:absolute;
+    top: 15pt;
+    left: 370pt;
+    z-index: -1;
+    width: 700pt;
+    opacity: calc(20%);
+  }
+  
+
+
+  .namelink1 {
+    font-family:font1;
+    text-align: center;
+    background-color: rgb(223, 222, 217);
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20%;
+    border-style: solid;
+    /* border-radius: 20%; */
+    position: absolute;
+    width: 65pt;
+    height: 38pt;
+    top: 810pt;
+    left: 983pt;
+    z-index: 6;
+    color: rgb(45,104,71);
+    transition: width 0.5s;
+  }
+  .namelink1:hover{
+    width:70pt;
+    transition: width 0.5s;
+  }
+  .namelink2 {
+    font-family:font1;
+    text-align: center;
+    background-color: rgb(223, 222, 217);
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20%;
+    border-style: solid;
+    position: absolute;
+    width: 99pt;
+    height: 20pt;
+    top: 640pt;
+    left: 653pt;
+    z-index: 4;
+    color: rgb(45,104,71);
+    transition: width 0.5s;
+  }
+  .namelink2:hover{
+    width:104pt;
+    transition: width 0.5s;
+  }
+  .namelink3 {
+    font-family:font1;
+    text-align: center;
+    background-color: rgb(223, 222, 217);
+    border-radius: 20%;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20%;
+    border-style: solid;
+    position: absolute;
+    width: 69pt;
+    height: 20pt;
+    top: 860pt;
+    left: 970pt;
+    z-index: 6;
+    color: rgb(45,104,71);
+    transition: width 0.5s;
+  }
+  .namelink3:hover{
+    width:74pt;
+    transition: width 0.5s;
+  }
+  .namelink4 {
+    font-family:font1;
+    text-align: center;
+    background-color: rgb(223, 222, 217);
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20%;
+    border-style: solid;
+    border-radius: 20%;
+    position: absolute;
+    width: 90pt;
+    height: 38pt;
+    top: 530pt;
+    left: 528pt;
+    z-index: 4;
+    color: rgb(45,104,71);
+    transition: width 0.5s;
+  }
+  .namelink4:hover{
+    width:100pt;
+    transition: width 0.5s;
+  }
+.namelink5 {
+    font-family:font1;
+    text-align: center;
+    background-color: rgb(223, 222, 217);
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20%;
+    border-style: solid;
+    border-radius: 20%;
+    position: absolute;
+    width: 90pt;
+    height: 20pt;
+    top: 650pt;
+    left: 860pt;
+    z-index: 4;
+    color: rgb(45,104,71);
+    transition: width 0.5s;
+  }
+  .namelink5:hover{
+    width:100pt;
+    transition: width 0.5s;
+  }
+  .namelink6 {
+    font-family:font1;
+    text-align: center;
+    background-color: rgb(223, 222, 217);
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20%;
+    border-style: solid;
+    border-radius: 20%;
+    position: absolute;
+    width: 97pt;
+    height: 20pt;
+    top: 720pt;
+    left: 800pt;
+    z-index: 4;
+    color: rgb(45,104,71);
+    transition: width 0.5s;
+  }
+  .namelink6:hover{
+    width:102pt;
+    transition: width 0.5s;
+  }
+  .namelink7 {
+    font-family:font1;
+    text-align: center;
+    background-color: rgb(223, 222, 217);
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20%;
+    border-style: solid;
+    border-radius: 20%;
+    position: absolute;
+    width: 89pt;
+    height: 20pt;
+    top: 400pt;
+    left: 705pt;
+    z-index: 4;
+    color: rgb(45,104,71);
+    transition: width 0.5s;
+  }
+  .namelink7:hover{
+    width:94pt;
+    transition: width 0.5s;
+  }
+  .namelink8 {
+    font-family:font1;
+    text-align: center;
+    background-color: rgb(223, 222, 217);
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20%;
+    border-style: solid;
+    border-radius: 20%;
+    position: absolute;
+    width: 79pt;
+    height: 38pt;
+    top: 690pt;
+    left: 673pt;
+    z-index: 4;
+    color: rgb(45,104,71);
+    transition: width 0.5s;
+  }
+  .namelink8:hover{
+    width:87pt;
+    transition: width 0.5s;
+  }
+  .namelink9 {
+    font-family:font1;
+    text-align: center;
+    background-color: rgb(223, 222, 217);
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20%;
+    border-style: solid;
+    border-radius: 20%;
+    position: absolute;
+    width: 71pt;
+    height: 38pt;
+    top: 370pt;
+    left: 620pt;
+    z-index: 4;
+    color: rgb(45,104,71);
+    transition: width 0.5s;
+  }
+  .namelink9:hover{
+    width:76pt;
+    transition: width 0.5s;
+  }
+  .namelink10 {
+    font-family:font1;
+    text-align: center;
+    background-color: rgb(223, 222, 217);
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20%;
+    border-style: solid;
+    border-radius: 20%;
+    position: absolute;
+    height: 20pt;
+    width: 75pt;
+    top: 677pt;
+    left: 595pt;
+    z-index: 4;
+    color: rgb(45,104,71);
+    transition: width 0.5s;
+  }
+  .namelink10:hover{
+    width:80pt;
+    transition: width 0.5s;
+  }
+
+
+
+
+  .flor-profile {
+    width:50%;
+    position: absolute;
+    top: -30pt;
+    left: -5pt;
+    z-index: -4;
+}
+.flor-profile-corn {
+  width:55%;
+  position: absolute;
+  rotate:calc(15deg);
+  top: -30pt;
+  left: 60pt;
+  z-index: -4;
+}
+  .profile-title {
+    font-family:font1;
+    /* position: absolute; */
+    line-height: 110pt;
+    /* white-space: normal; */
+    /* margin-right: auto; */
+    margin-top: 100;
+    margin-bottom: 20pt;
+    font-size: 120pt;
+    font-weight: bolder;
+    text-align:left;
+    width:566;
+    letter-spacing: 0.1pt;
+    overflow-wrap: break-word;
+    /* top: 30pt;
+    right: 80pt; */
+    z-index: 3;
+    color: rgb(45,104,71);
+}
+.profile-title-aguaymanto {
+  font-family:font1;
+  /* position: absolute; */
+  line-height: 110pt;
+  /* white-space: normal; */
+  /* margin-right: auto; */
+  margin-top: 100;
+  margin-bottom: 20pt;
+  font-size: 118pt;
+  font-weight: bolder;
+  text-align:left;
+  width:566;
+  letter-spacing: 0.1pt;
+  overflow-wrap: break-word;
+  /* top: 30pt;
+  right: 80pt; */
+  z-index: 3;
+  color: rgb(45,104,71);
+}
+.profile-aka {
+    font-family:font1;
+    float:left;
+    background-color:rgb(223, 222, 217,.75);
+    /* padding-top: 5pt;
+    padding-bottom: 5pt; */
+    /* position:; */
+    line-height: 30pt;
+    /* white-space: normal; */
+    /* margin-right: auto; */
+    font-size: 25pt;
+    font-weight: bolder;
+    /* top: 210pt; */
+    text-align: left;
+    /* right: 80pt; */
+    margin-top: 5pt;
+    margin-bottom: 20pt;
+    margin-left: 190pt;
+    width: 530pt;
+    z-index: 3;
+    color: rgb(45,104,71);
+}
+.profile-body {
+    font-family:font1;
+    float:left;
+    background-color:rgb(223, 222, 217.75);
+    /* padding-top: 5pt;
+    padding-bottom: 5pt; */
+    /* position: absolute; */
+    line-height: 19pt;
+    /* white-space: normal; */
+    /* margin-right: auto; */
+    font-size: 15pt;
+    font-weight: bolder;
+    /* top: 300pt; */
+    text-align: left;
+    /* right: 290pt; */
+    width: 300pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    margin-left: 190pt;
+    z-index: 3;
+    color: rgb(0, 0, 0);
+}
+.profile-link {
+    font-family:font1;
+    float:left;
+    background-color:rgb(223, 222, 217,.75);
+    /* padding-top: 5pt;
+    padding-bottom: 5pt; */
+    /* position: absolute; */
+    line-height: 19pt;
+    /* white-space: normal; */
+    font-size: 15pt;
+    font-weight: bolder;
+    /* top: 480pt; */
+    text-align: left;
+    /* right: 290pt; */
+    margin-top: 5pt;
+    margin-bottom: 170pt;
+    margin-left: 190pt;
+    width: auto;
+    z-index: 3;
+    color: rgb(45,104,71);
+}
+.profile-link-chusquea {
+  font-family:font1;
+  float:left;
+  background-color:rgb(223, 222, 217,.75);
+  /* padding-top: 5pt;
+  padding-bottom: 5pt; */
+  /* position: absolute; */
+  line-height: 19pt;
+  /* white-space: normal; */
+  font-size: 15pt;
+  font-weight: bolder;
+  /* top: 480pt; */
+  text-align: left;
+  /* right: 290pt; */
+  margin-top: 5pt;
+  margin-bottom: 300pt;
+  margin-left: 190pt;
+  width: auto;
+  z-index: 3;
+  color: rgb(45,104,71);
+}
+
+
+
+
+.nav-icon-home {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  width: 90pt;
+  transition: width 0.5s;
+  z-index: 9;
+}
+.nav-icon-home:hover{
+  width:108pt;
+  transition: width 0.5s;
+}
+
+.nav-icon-about {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  width: 90pt;
+  transition: width 0.5s;
+  z-index: 9;
+}
+.nav-icon-about:hover{
+  width:108pt;
+  transition: width 0.5s;
+}
+.nav-icon-costa {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  width: 90pt;
+  z-index: 9;
+}
+.nav-icon-costa {
+  width: 90pt;
+  transition: width 0.5s;
+}
+
+.nav-icon-costa:hover {
+  width: 108pt;
+}
+.nav-icon-sierra {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  width: 90pt;
+  transition: width 0.5s;
+  z-index:9;
+}
+.nav-icon-sierra:hover{
+  width:108pt;
+  transition: width 0.5s;
+}
+.nav-icon-selva {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  width: 90pt;
+  transition: width 0.5s;
+  z-index: 9;
+}
+.nav-icon-selva:hover{
+  width:108pt;
+  transition: width 0.5s;
+}
+
+.nav-bar {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 35pt;
+  z-index: 9;
+  
+}
+.nav-bar-titles {
+  font-family: font1;
+  font-size: 19pt;
+  padding-left: 26.5%;
+  padding-right: 26.5%;
+  width: 47%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  bottom: -25pt;
+  z-index: 9;
+}
+.nav-titles {
+  display: block;
+  /* background-color:rgb(223, 222, 217.80); */
+  color:rgb(223, 222, 217);
+  border-radius: 50%;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  width: 200pt;
+  z-index: 9;
+}
+
+.nav-box{
+  width:1200pt;
+  /* background-color:rgb(223, 222, 217);*/
+  background: linear-gradient(to bottom, rgb(.80), rgb( 0) );
+  opacity: 0.75;
+  height:100pt; 
+  position:fixed;
+  margin-bottom:-25pt;
+  margin-left: -30pt;
+  bottom:-10pt;
+  z-index:7;
+}
+
+
+
+h1 {
+  font-size: 20pt;
+  font-weight: bolder;
+  font-family:font1;
+  position: relative;
+  bottom: 83pt;
+  left: 173pt;
+  color: rgb(45,104,71);
+  width:500pt;
+}
+h2 {
+    font-size: 20pt;
+    font-weight: bolder;
+    font-family:font1;
+    position: relative;
+    bottom: 100pt;
+    left: 173pt;
+    color: rgb(45,104,71);
+    width:500pt;
+}
+.h3 {
+    font-size: 20pt;
+    font-weight: bolder;
+    font-family:font1;
+    position: relative;
+    bottom: 65pt;
+    left: 173pt;
+    color: rgb(0, 0, 0);
+    z-index:6;
+    width:500pt;
+}
+/* .h3:link {
+    color: rgb(0, 0, 0);
+} */
+
+/* p {
+    font-size: 15pt;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 10pt;
+    color: rgb(64, 95, 7);
+} */
+.cantuta-splash {
+  width: 54%;
+  position: absolute;
+  top: -5pt;
+  right: -18pt;
+}
+
+
+.sierra-highlight {
+  position:absolute;
+  padding-bottom: 70pt;
+  width: 628pt;
+  left: 431pt;
+  top: 252pt;
+  z-index:-3;
+}
+.selva-highlight {
+  position:absolute;
+  padding-bottom: 70pt;
+  width: 594pt;
+  left: 476pt;
+  top: 15pt;
+  z-index:-3;
+}
+.costa-highlight {
+  position:absolute;
+  padding-bottom: 70pt;
+  width: 636pt;
+  left: 370pt;
+  top: 200pt;
+  z-index:-3;
+}
+
+
+
+.about-title{
+  font-family:font1;
+  position: absolute;
+  line-height: 110pt;
+  top:80pt;
+  left: 40pt;
+  font-size: 120pt;
+  font-weight: bolder;
+  text-align:left;
+  width:566;
+  z-index: 3;
+  color: rgb(45,104,71);
+}
+.about-body {
+  font-family:font1;
+  position:absolute;
+  
+  line-height: 25pt;
+  font-size: 20pt;
+  font-weight: bolder;
+  text-align: left;
+  width: 400pt;
+  top: 200pt;
+  left:40pt;
+  z-index: 3;
+  color: rgb(0, 0, 0);
+}
+
+
+.peru-bg {
+  position: absolute;
+  left: -450pt;
+  bottom: -500pt;
+  opacity: 17%;
+  width: 110%;
+  rotate: -90deg;
+}
+
+/* breadcrumbs tutorial by we schools */
+ul.breadcrumb {
+  font-family: font1;
+  background-image: linear-gradient(to right, rgb(223, 222, 217,.80), rgb(223, 222, 217, 0) );
+  padding: 10px 16px;
+  list-style: none;
+  width: 50%;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: rgb(45,104,71);
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: rgb(171, 22, 91);
+  text-decoration: underline;
+}
+
+
+.container-regions {
+  border-color: black;
+    border-width: 4px;
+    border-radius: 5%;
+    border-style: solid;
+  width: 300pt;
+  position: fixed;
+  margin-top: 42pt;
+  margin-left: 30pt;
+  margin-right:40pt;
+}
+.container-text {
+  line-height: 22pt;
+  font-family: font1;
+  font-size: 14pt;
+  width: 270pt;
+  padding-left: 15pt;
+  padding-right: 15pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  
+}
